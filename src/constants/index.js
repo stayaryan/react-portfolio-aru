@@ -3,14 +3,14 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = 'A subtitle';
+export const HERO_CONTENT = 'Software Engineer @Nike previously @Wayfair';
 // `I am a passionate full stack developer with a knack for crafting robust and 
 // scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies
 //  like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. 
 // My goal is to leverage my expertise to create innovative solutions that drive business growth and 
 // deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = 'Something about you Mau';
+export const ABOUT_TEXT = 'I’m Aryan Singh, a software engineer who turns complex data flows into fast, reliable products. I’ve shipped scalable services and real-time analytics at Wayfair and Nike, building Kafka-driven pipelines and Python/Flask + Postgres backends that keep dashboards and decisions up to the minute. Highlights include cutting a Spring Boot refund flow from 8 hours to 1 hour, reducing a web app’s initial load from 8s to 2s through smart lazy-loading, and accelerating GPU-based time-series algorithms during my M.S. at UC Riverside. I care about clean architecture, clear metrics, and shipping solutions that make customers’ lives easier. When I’m not debugging, I’m documenting—so teams can move faster with confidence.';
 //`I am a dedicated and versatile full stack developer with a passion 
 // for creating efficient and user-friendly web applications. With 5 years of professional experience,
 //  I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, 
@@ -22,38 +22,43 @@ export const ABOUT_TEXT = 'Something about you Mau';
 
 export const EXPERIENCES = [
   {
-    year: "September 2023 - Present",
-    role: "Full Stack Developer",
-    company: "Wayfair",
-    description: `Built a multi-tenant ticketing system employing a microservice architecture yielding a savings of 1000 agent licenses and reducing
-annual costs by $200k. Optimized performance of relational database by introducing read replicas and database indexes, resulting in a 95% reduction in query
-response time and enhanced system performance. Led the development of the instant wallet refund feature with Node.js, ensuring asynchronous handling and managing concurrent
-data access, reducing refund processing time from 8 days to 1 hour. Collaborated cross-functionally to implement instant payouts through Stripe integration in a PCI compliant payment microservice,
-ensuring access to funds within 30 minutes of a charge. Executed a stability initiative by configuring liveness and readiness probes to enhance health checks and by integrating Application
-Performance Monitoring and Grafana for better debugging, and monitoring across 20 Java microservices.`,
+    year: "January 2024 - Present",
+    role: "Software Engineer",
+    company: "Nike",
+    description: `Made an article search system which improves user satisfaction by 23% and conversion rate by 5% on products that have a story associated with them.
+Integrated BM25-based ranking algorithm with backend search on AWS Elastic Beanstalk, enabling efficient retrieval and ordering of articles, resulting in a 25% faster search response time and more relevant top-10 results.
+Built a dynamic search bar interface using React that communicates with a backend article search service to deliver ranked, relevance-driven results, significantly improving user navigation and content discoverability.
+Developed ConceptZero, a backend matching engine that translates natural language search queries into relevant Nike product results using custom rules and data-driven logic.
+Implemented a JSON-based search restriction on the Nike website, successfully preventing users from querying three specific terms, enhancing content compliance and aligning with business policy.
+I optimized a Spring Boot payment microservice, reducing refund processing time from 8 hrs to 1 hr by streamlining API endpoints and database queries, significantly enhancing customer satisfaction and operational efficiency.
+Improved P99 latency 42% (330 → 190ms) by migrating the search microservice to Spring WebFlux, batching requests, and tuning JVM flags on AWS.
+`,
     technologies: ["Express.js", "Postgresql", "MongoDB", "Kafka", "Jenkins", "Elastic Search", "Java", "Redis", "Kubernetes", "CI/CD", "AWS (S3, SQS, EC2, RDS, SNS)", "Azure"],
   },
   {
-    year: "September 2023 - Present",
+    year: "Aug 2021 - Aug 2022",
+    role: "Full Stack Developer",
+    company: "Wayfair",
+    description: `My work optimized application performance by reducing initial load times from 8 seconds to 2 seconds through lazy loading, a technique that defers loading of non-critical components or resources until needed. This ensured faster rendering of core functionality and enhanced user experience during high-traffic scenarios.
+I introduced custom annotations in the codebase to standardize function naming and parameter types, reducing runtime errors by 30%. This simplification streamlined cross-module integration, improved developer productivity by 20%, and ensured consistent functionality across services.
+Developed a distributed, centralized, microservice website with reactjs frontend, managing multiple instances simultaneously with AWS integration, tokenization of outcomes for processing in large scale machine learning systems for extraction of advanced analytics.
+Built a domain Model Relationship for E-commerce project using Hibernate ORM Framework. Applied all the spring Data JPA repository methods and query/finder methods that I learned from ongoing Sprint JIRA tasks. Written unit test cases for Spring Data JPA repository layer using JUnit and mockito.
+Built a reliable distributed key-value storage system in Java. Implemented the Raft Consensus algorithm to elect leaders and replicate logs, achieving consensus in leader election and for a system consisting of five nodes. Deployed it on AWS using EC2.`,
+    technologies: ["Express.js", "Postgresql", "MongoDB", "Kafka", "Jenkins", "Elastic Search", "Java", "Redis", "Kubernetes", "CI/CD", "AWS (S3, SQS, EC2, RDS, SNS)", "Azure"],
+  },
+  {
+    year: "September 2023 - December 2024",
     role: "Gradaute Researcher",
     company: "University of California, Riverside",
-    description: ``,
+    description: `Created a multi-threaded parallel system that processes catch-22 time-series features 50 times faster than serial execution time on identical machines.  Done as part of my research under prof. Philip Brisk`,
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
   },
   {
     year: "March 2024 - June 2024",
     role: "Teaching Assistant",
     company: "University of California, Riverside",
-    description: `Enlightened 44 freshmen and sophomores to concepts such as Buoyancy, Resonance, Calorimetry. Graded 450 lab reports and guided them to improve on their weaknesses.`,
-    //technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "Feb 2022- August 2022",
-    role: "Software Engineer",
-    company: "Deloitte",
-    description: `Spearheaded the integration of CRM into the banks existing loan processing system, eliminating manual data entry and reducing processing time by up to 50%. Robust testing automation using Git for version control and Kubernetes for deployment, improving test coverage and efficiency by 30% and 10%, respectively.`,
-    technologies: ["HTML", "CSS", "DOM", "Kubernetes", "mySQL", "SpringBoot", "Model-View-Controller (MVC)", "Postman"],
-    //, , , , , , , .
+    description: `Helped 44 freshmen and sophomores to concepts such as Buoyancy, Resonance, Calorimetry. Graded 450 lab reports and guided them to improve on their weaknesses.`,
+    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
   },
   {
     year: "April 2020 - June 2020",
@@ -62,7 +67,7 @@ Performance Monitoring and Grafana for better debugging, and monitoring across 2
     description: `Fabricated explanatory 6 mathematical notes and 20 animations for helping the reader understand and visualize selected concepts regarding single-variable calculus.`,
     technologies: ["Python", "manim", "JavaScript", "Postman", "Model-View-Controller (MVC)"],
     //, , , , .
-  },
+  }
 ];
 
 export const PROJECTS = [

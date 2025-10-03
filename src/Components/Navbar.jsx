@@ -1,4 +1,4 @@
-import logo from "../assets/mjlogo.png"
+import logo from "../assets/asLogo.png"
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -10,15 +10,15 @@ const Navbar = () => {
        <img className="mx-2 w-10" src={logo} alt="logo" />
     </div>
     <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/manasi-j/">
+        <a href="https://www.linkedin.com/in/aryan-singh-codes/">
         <FaLinkedin/>
         </a>
-        <a href="https://github.com/jazz42156">
+        <a href="https://github.com/stayaryan">
         <FaGithub/>
         </a>
-        <a href="https://www.instagram.com/manasi_2_0_0_0/">
+        {/* <a href="https://www.instagram.com/manasi_2_0_0_0/">
         <FaInstagram/>
-        </a>
+        </a> */}
         {/* <FaSquareXTwitter/> */}
     </div>
   </nav>

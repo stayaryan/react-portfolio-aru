@@ -1,4 +1,4 @@
-import aboutImg from "../assets/mjabout.jpg";
+import aboutImg from "../assets/asAbout.png";
 import { ABOUT_TEXT } from "../constants";
 const About = () => {
   return (
